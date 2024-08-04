@@ -11,8 +11,8 @@ public class BloodData {
 	/**
 	 * The constructor initializes the blood type and RH factor using custom values
 	 * 
-	 * @param blood_type The custom value used to set the blood_type
-	 * @param rh_factor The custom value used to set the rh_factor
+	 * @param bloodType The custom value used to set the bloodType
+	 * @param rhFactor The custom value used to set the rhFactor
 	 */
 	public BloodData(String bloodType, String rhFactor) {
 		this.bloodType = bloodType;
@@ -26,7 +26,7 @@ public class BloodData {
 		this("O", "+");
 	}
 	
-	// Getters and Setters for the fields blood_type and rh_factor
+	// Getters and Setters for the fields bloodType and rhFactor
 	public String getBloodType() {
 		return bloodType;
 	}
@@ -44,9 +44,9 @@ public class BloodData {
 	}
 	
 	/**
-	 * The displayDetails method displays a JOptionPane message containing the blood_type and rh_factor of the object
+	 * The displayDetails method displays a JOptionPane message containing the bloodType and rhFactor of the object
 	 * 
-	 * @param blood_data_name The name of the object
+	 * @param bloodDataName The name of the object
 	 */
 	public void displayDetails(String bloodDataName) {
 		JOptionPane.showMessageDialog(null, "Blood type: " + bloodType

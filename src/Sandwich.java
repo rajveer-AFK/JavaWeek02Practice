@@ -3,25 +3,25 @@
  */
 public class Sandwich {
 	
-	private String main_ingredient;
-	private String bread_type;
+	private String mainIngredient;
+	private String breadType;
 	private double price;
 	
-	// Getters and Setters for the fields main_ingredient, bread_type, and price
-	public String getMain_ingredient() {
-		return main_ingredient;
+	// Getters and Setters for the fields mainIngredient, breadType, and price
+	public String getMainIngredient() {
+		return mainIngredient;
 	}
 	
-	public void setMain_ingredient(String main_ingredient) {
-		this.main_ingredient = main_ingredient;
+	public void setMainIngredient(String mainIngredient) {
+		this.mainIngredient = mainIngredient;
 	}
 	
-	public String getBread_type() {
-		return bread_type;
+	public String getBreadType() {
+		return breadType;
 	}
 	
-	public void setBread_type(String bread_type) {
-		this.bread_type = bread_type;
+	public void setBreadType(String breadType) {
+		this.breadType = breadType;
 	}
 	
 	public double getPrice() {
@@ -31,6 +31,5 @@ public class Sandwich {
 	public void setPrice(double price) {
 		this.price = price;
 	}
-	
 	
 }
