@@ -5,8 +5,8 @@ import javax.swing.JOptionPane;
  */
 public class BloodData {
 	
-	private String blood_type;
-	private String rh_factor;
+	private String bloodType;
+	private String rhFactor;
 	
 	/**
 	 * The constructor initializes the blood type and RH factor using custom values
@@ -14,9 +14,9 @@ public class BloodData {
 	 * @param blood_type The custom value used to set the blood_type
 	 * @param rh_factor The custom value used to set the rh_factor
 	 */
-	public BloodData(String blood_type, String rh_factor) {
-		this.blood_type = blood_type;
-		this.rh_factor = rh_factor;
+	public BloodData(String bloodType, String rhFactor) {
+		this.bloodType = bloodType;
+		this.rhFactor = rhFactor;
 	}
 	
 	/**
@@ -27,20 +27,20 @@ public class BloodData {
 	}
 	
 	// Getters and Setters for the fields blood_type and rh_factor
-	public String getBlood_type() {
-		return blood_type;
+	public String getBloodType() {
+		return bloodType;
 	}
 
-	public void setBlood_type(String blood_type) {
-		this.blood_type = blood_type;
+	public void setBloodType(String bloodType) {
+		this.bloodType = bloodType;
 	}
 
-	public String getRh_factor() {
-		return rh_factor;
+	public String getRhFactor() {
+		return rhFactor;
 	}
 
-	public void setRh_factor(String rh_factor) {
-		this.rh_factor = rh_factor;
+	public void setRhFactor(String rhFactor) {
+		this.rhFactor = rhFactor;
 	}
 	
 	/**
@@ -48,9 +48,9 @@ public class BloodData {
 	 * 
 	 * @param blood_data_name The name of the object
 	 */
-	public void displayDetails(String blood_data_name) {
-		JOptionPane.showMessageDialog(null, "Blood type: " + blood_type
-		  + "\nRH factor: " + rh_factor, blood_data_name, 1);
+	public void displayDetails(String bloodDataName) {
+		JOptionPane.showMessageDialog(null, "Blood type: " + bloodType
+		  + "\nRH factor: " + rhFactor, bloodDataName, 1);
 	}
 	
 }

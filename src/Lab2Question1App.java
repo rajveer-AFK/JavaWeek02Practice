@@ -5,21 +5,21 @@ public class Lab2Question1App {
 	public static void main(String[] args) {
 		
 		// Creates a BloodType object using user input and displays the details
-		BloodData blood_data1 = createBloodDataObject();
-		blood_data1.displayDetails("blood_data1");
+		BloodData bloodData1 = createBloodDataObject();
+		bloodData1.displayDetails("bloodData1");
 		
 		// Creates a BloodType object using the default constructor and displays the details
-		BloodData blood_data2 = new BloodData();
-		blood_data2.displayDetails("blood_data2");
+		BloodData bloodData2 = new BloodData();
+		bloodData2.displayDetails("bloodData2");
 
 		// Changes default values of blood_data2 to user values and displays the details
-		String user_bloodtype = JOptionPane.showInputDialog(null, "Enter a bloodtype to change the default");
-		blood_data2.setBlood_type(user_bloodtype);
+		String userBloodType = JOptionPane.showInputDialog(null, "Enter a bloodtype to change the default");
+		bloodData2.setBloodType(userBloodType);
 		
-		String user_rh_factor = JOptionPane.showInputDialog(null, "Enter an rh factor to change the default");
-		blood_data2.setRh_factor(user_rh_factor);
+		String userRhFactor = JOptionPane.showInputDialog(null, "Enter an rh factor to change the default");
+		bloodData2.setRhFactor(userRhFactor);
 		
-		blood_data2.displayDetails("blood_data2");
+		bloodData2.displayDetails("bloodData2");
 	}
 	
 	/**
@@ -28,10 +28,10 @@ public class Lab2Question1App {
 	 * @return Returns a fully qualified BloodData object
 	 */
 	public static BloodData createBloodDataObject() {
-		String user_bloodtype = JOptionPane.showInputDialog(null, "Enter the bloodtype");
-		String user_rh_factor = JOptionPane.showInputDialog(null, "Enter the rh factor");
+		String userBloodType = JOptionPane.showInputDialog(null, "Enter the bloodtype");
+		String userRhFactor = JOptionPane.showInputDialog(null, "Enter the rh factor");
 		
-		return new BloodData(user_bloodtype, user_rh_factor);
+		return new BloodData(userBloodType, userRhFactor);
 	}
 	
 }
