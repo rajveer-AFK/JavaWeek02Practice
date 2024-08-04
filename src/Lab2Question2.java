@@ -5,8 +5,7 @@ public class Lab2Question2 {
 	public static void main(String[] args) {
 		
 		// Gets a value for inches from the user
-		String user_inches_value = JOptionPane.showInputDialog(null, "Enter the inches");
-		double inches = Integer.parseInt(user_inches_value);
+		double inches = Double.parseDouble(JOptionPane.showInputDialog(null, "Enter the inches"));
 		
 		// Converts and outputs the inches in feet and yards (2 decimal places)
 		JOptionPane.showMessageDialog(null, inches + " inches is equivalent to " + convertInchesToFeet(inches)
@@ -24,8 +23,7 @@ public class Lab2Question2 {
 	 */
 	public static double convertInchesToFeet(double inches) {
 		
-		double feet = inches / 12;
-		return feet;
+		return inches / 12;
 	}
 	
 	/**
@@ -36,7 +34,6 @@ public class Lab2Question2 {
 	 */
 	public static double convertInchesToYards(double inches) {
 		
-		double yards = inches / 36;
-		return yards;
+		return inches / 36;
 	}
 }
